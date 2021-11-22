@@ -26,6 +26,7 @@ close.addEventListener('click', function(){
         close.classList.add('hidden');
         title.classList.remove('hidden');
         header.style.background = "linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url(images/mobile/image-hero.jpg)";
+        header.style.backgroundSize = "cover";
         mobileLinks.classList.add('hidden');
     }
     else {
