@@ -152,7 +152,7 @@ section {
     text-transform: uppercase;
 }
 
-.creations button {
+button {
     background: transparent;
     padding: 5px 30px 5px 30px;
     text-transform: uppercase;
@@ -163,7 +163,7 @@ section {
     transition: 300ms ease-in-out;
 }
 
-.creations button:hover {
+ button:hover {
     background: black;
     color: white;
     transition: color 300ms ease-in-out;
@@ -292,3 +292,50 @@ footer {
     font-weight: 300;
     font-family: var(--firstFont);
 }
+
+.hidden {
+    display: none;
+}
+
+.mobile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.footer-links ul li:last-child {
+    padding: 0;
+}
+
+.footer-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 300ms ease-in-out;
+    position: relative;
+    top: 4px;
+}
+
+.footer-links ul li:hover::after {
+    width: 100%;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    font-family: var(--firstFont);
+    color: white;
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
+}
+
